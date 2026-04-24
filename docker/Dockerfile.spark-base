@@ -28,3 +28,5 @@ COPY spark-defaults.conf /opt/spark/conf/
 RUN chmod 764 /opt/spark/conf/*
 
 WORKDIR /opt/spark/
+
+RUN pip install numpy==1.26.4 pyarrow==12.0.1 pandas==1.5.3
